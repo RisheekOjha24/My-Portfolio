@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap');
+/* family=RobotoSlab:wght@300&*/
+.Box{
+    display: flex;
+    height: 100%;
+    background-color: aquamarine;
+}
+.left-part{
+    flex: 1.2;
+    background-color: white;
+    display:flex;
+    justify-content:start;
+    align-items: center;
+}
+.right-part{
+    flex:1;
+    background-color: white;
+}
+.solid-circle{
+    bottom: 0;
+    width:25rem;
+    position: fixed;
+    z-index: 4;
+    border-radius: 50%;
+    height:auto;
+    transform: translateY(15rem);
+}
+.arc{
+    transform: translateY(2.7rem) translateX(-1.2rem) rotate(12deg);
+    position: fixed;
+    bottom: 0rem;
+    height:15rem;
+}
+.big-circle{
+    height:44rem;
+    border-radius: 50%;
+    border: 1px solid #fd6220;
+    z-index: 1;
+    position:fixed;
+    right:0rem;
+    transform: translateX(4rem) translateY(-25rem);
+}
+.my-image{
+    position: fixed;
+    width:40rem;
+    right:0rem;
+    transform: translateX(11rem);
+    z-index:2;
+    border-radius: 50%;
+    filter: brightness(110%);
+}
+.centre-part{
+    margin: 2rem;
+}
+.centre-part h1{
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+.centre-part h1 span{
+    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
+    font-weight: 800;
+}
+.centre-part h2{
+    font-family:Poppins;
+    font-size:28px;
+    font-weight:lighter;
+}
+.centre-part p{
+    font-size: 20px;
+    font-family:'Roboto Slab';
+}

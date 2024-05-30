@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.Box{
+    display: flex;
+    height: 100%;
+    background-color: aquamarine;
+}
+.left-part{
+    flex: 1.2;
+    background-color: white;
+    display:flex;
+    justify-content:start;
+    align-items: center;
+}
+.right-part{
+    flex:1;
+    background-color: white;
+}
+
+.centre-part{
+    margin-left: 10px;
+}
+.centre-part h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+}
+.centre-part h2{
+    font-family: Montserrat;
+    font-size: 20px;
+}
+.centre-part ul,p{
+    font-family:Cambria,'Times New Roman', Times, serif;
+    padding-top: 2px;
+    font-size: 19px;
+}
+
+.centre-part ul>li{
+    margin-left: 2rem;
+}
+.exp-div{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.ele-img-box{
+    display: inline-block;
+   
+}
+.ele-img{
+    width: 38rem;
+    float: right;
+     transform: translateX(6rem);
+}

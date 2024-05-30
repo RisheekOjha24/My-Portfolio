@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.Box{
+    display: flex;
+    height: 100%;
+    background-color: aquamarine;
+}
+.left-part{
+    flex: 1.2;
+    background-color: white;
+    display:flex;
+    justify-content:start;
+    align-items: center;
+}
+.right-part{
+    flex:1;
+    background-color: white;
+}
+.centre-part{
+    margin-left: 10px;
+}
+.centre-part h1{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+}
+.centre-part h2{
+
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+.centre-part h2 span{
+    margin-left: 1rem;
+}
+.centre-part p{
+    font-family:Cambria,'Times New Roman', Times, serif;
+    padding-top: 2px;
+    font-size: 19px;
+}
+.education-content{
+    display: flex;
+    flex-direction: column;
+    display:flex;
+    gap: 10px
+}
+.boy-img{   
+    width: 22rem;
+    border-radius: 50% 50% 10% 10%;
+}
+.tilt{
+    position: fixed;
+    display:"inline-block";
+    top:4rem;
+    right: 14rem;
+}
+
+.trans-circle{
+    width:40rem;
+    position: fixed;
+    right:0;
+    transform: translateX(12rem) translateY(-5rem);
+}
