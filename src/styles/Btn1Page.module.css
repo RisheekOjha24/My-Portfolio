@@ -26,10 +26,13 @@
     transform: translateY(15rem);
 }
 .arc{
-    transform: translateY(2.7rem) translateX(-1.2rem) rotate(12deg);
+    transform: translateY(3.4rem) translateX(-1.2rem) rotate(10deg);
     position: fixed;
     bottom: 0rem;
     height:15rem;
+}
+.arc2{
+     transform: translateY(3.1rem) translateX(-1.8rem) rotate(9deg);
 }
 .big-circle{
     height:44rem;
@@ -47,6 +50,7 @@
     transform: translateX(11rem);
     z-index:2;
     border-radius: 50%;
+    
     filter: brightness(110%);
 }
 .centre-part{
@@ -56,7 +60,7 @@
     font-size: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 4px;
-}
+    }
 .centre-part h1 span{
     font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
     font-weight: 800;
@@ -69,4 +73,5 @@
 .centre-part p{
     font-size: 20px;
     font-family:'Roboto Slab';
+    
 }
