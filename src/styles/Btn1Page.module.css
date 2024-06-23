@@ -1,77 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap');
-/* family=RobotoSlab:wght@300&*/
-.Box{
-    display: flex;
-    height: 100%;
-    background-color: aquamarine;
+
+.Container {
+  display: flex;
+  background-color: aquamarine;
 }
-.left-part{
-    flex: 1.2;
-    background-color: white;
-    display:flex;
-    justify-content:start;
-    align-items: center;
+
+.LeftPart {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
 }
-.right-part{
-    flex:1;
-    background-color: white;
+
+.CentrePart {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 4px;
 }
-.solid-circle{
-    bottom: 0;
-    width:25rem;
-    position: fixed;
-    z-index: 4;
-    border-radius: 50%;
-    height:auto;
-    transform: translateY(15rem);
+
+.CentrePart h1 {
+  font-size: 6vw; /* Responsive font size */
 }
-.arc{
-    transform: translateY(3.4rem) translateX(-1.2rem) rotate(10deg);
-    position: fixed;
-    bottom: 0rem;
-    height:15rem;
+
+.CentrePart h1 span {
+  font-weight: 800;
 }
-.arc2{
-     transform: translateY(3.1rem) translateX(-1.8rem) rotate(9deg);
+
+.CentrePart h2 {
+  font-family: Poppins;
+  font-size: 2vw; /* Responsive font size */
+  font-weight: lighter;
 }
-.big-circle{
-    height:44rem;
-    border-radius: 50%;
-    border: 1px solid #fd6220;
-    z-index: 1;
-    position:fixed;
-    right:0rem;
-    transform: translateX(4rem) translateY(-25rem);
+
+.CentrePart p {
+  font-size: 1.5vw; /* Responsive font size */
+  font-family: 'Roboto Slab';
 }
-.my-image{
-    position: fixed;
-    width:40rem;
-    right:0rem;
-    transform: translateX(11rem);
-    z-index:2;
-    border-radius: 50%;
-    
-    filter: brightness(110%);
+
+.RightPart {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative; /* Make sure images are positioned relative to this container */
 }
-.centre-part{
-    margin: 2rem;
+
+.BigCircle {
+  height: 30vw; /* Responsive size */
+  border-radius: 50%;
+  border: 1px solid #fd6220;
+  z-index: 1;
+  margin-right: 2vw; /* Responsive margin */
 }
-.centre-part h1{
-    font-size: 100px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 4px;
-    }
-.centre-part h1 span{
-    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
-    font-weight: 800;
+
+.SolidCircle {
+  width: 20vw; /* Responsive size */
+  height: auto;
+  z-index: 2;
+  margin-bottom: 5vw; /* Responsive margin */
 }
-.centre-part h2{
-    font-family:Poppins;
-    font-size:28px;
-    font-weight:lighter;
+
+.MyImage {
+  width: 25vw; /* Responsive size */
+  height: auto;
+  z-index: 3;
+  border-radius: 50%;
+  filter: brightness(110%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.centre-part p{
-    font-size: 20px;
-    font-family:'Roboto Slab';
-    
+
+.Arc {
+  height: 12vw; /* Responsive size */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.Arc2 {
+  transform: translateX(-1.8vw) rotate(9deg); /* Adjusted for responsiveness */
+}
+
+
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .RightPart {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2rem; /* Add padding for spacing */
+  }
+
+  .BigCircle {
+    height: 20vw; /* Adjusted size for smaller screens */
+    margin-bottom: 2rem; /* Add margin between items */
+  }
+
+  .SolidCircle {
+    width: 15vw; /* Adjusted size */
+    margin-bottom: 2rem; /* Add margin between items */
+  }
 }
