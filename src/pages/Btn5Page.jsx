@@ -27,7 +27,7 @@ function Btn5Page() {
         <div className={styles["right-side"]}>
           <img src={avatarImg} alt="result" className={styles["avatar-img"]} />
           <div
-            style={{ display: "flex", alignItems: "center", marginTop: "1rem" }}
+            className={styles["mern-box"]}
           >
             <h2>Technology Used</h2>
             <img src={hcjs} alt="image" className={styles["mern-img"]} />

@@ -55,10 +55,6 @@ const HomePage = () => {
           />
         </div>
 
-        <div className="ring">
-          <img src={ovalRing} alt="" />
-        </div>
-
         <div className="btnContent">{displaybtnData(btnVal)}</div>
       </div>
     </>

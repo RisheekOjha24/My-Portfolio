@@ -1,77 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto+Slab:wght@300&display=swap');
-/* family=RobotoSlab:wght@300&*/
-.Box{
-    display: flex;
-    height: 100%;
-    background-color: aquamarine;
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.left-part{
-    flex: 1.2;
-    background-color: white;
-    display:flex;
-    justify-content:start;
-    align-items: center;
+
+html, body {
+  height: 100%;
 }
-.right-part{
-    flex:1;
-    background-color: white;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.solid-circle{
-    bottom: 0;
-    width:25rem;
-    position: fixed;
-    z-index: 4;
-    border-radius: 50%;
-    height:auto;
-    transform: translateY(15rem);
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
 }
-.arc{
-    transform: translateY(3.4rem) translateX(-1.2rem) rotate(10deg);
-    position: fixed;
-    bottom: 0rem;
-    height:15rem;
+
+.LeftPart {
+  flex: 1;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
-.arc2{
-     transform: translateY(3.1rem) translateX(-1.8rem) rotate(9deg);
+
+.CentrePart {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
 }
-.big-circle{
-    height:44rem;
-    border-radius: 50%;
-    border: 1px solid #fd6220;
-    z-index: 1;
-    position:fixed;
-    right:0rem;
-    transform: translateX(4rem) translateY(-25rem);
+
+.CentrePart h1 {
+  font-size: 8vw; 
+  text-align: left;
 }
-.my-image{
-    position: fixed;
-    width:40rem;
-    right:0rem;
-    transform: translateX(11rem);
-    z-index:2;
-    border-radius: 50%;
-    
-    filter: brightness(110%);
+
+.CentrePart h1 span {
+  font-weight: 800;
 }
-.centre-part{
-    margin: 2rem;
+
+.CentrePart h2 {
+  font-family: 'Poppins', sans-serif;
+text-align: left;
+  font-size: 2.5vw; /* Responsive font size */
+  font-weight: lighter;
 }
-.centre-part h1{
-    font-size: 100px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 4px;
+
+.CentrePart p {
+  font-size: 1.8vw;
+  text-align:justify;
+  font-family: 'Roboto Slab', serif;
+}
+
+.RightPart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: 2rem;
+  box-sizing: content-box;
+  padding-top: 10px;
+}
+
+.BigCircle {
+  width: 36vw;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+   box-sizing: content-box;
+  padding-top: 12px;
+}
+
+.MyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: brightness(110%);
+}
+
+.SolidCircle {
+  width: 20vw; /* Responsive size */
+  height: auto;
+  margin-bottom: 5vw; /* Responsive margin */
+}
+
+@media (max-width: 668px){
+    .Container{
+        flex-direction: column;
     }
-.centre-part h1 span{
-    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT';
-    font-weight: 800;
+    .CentrePart{
+        max-width: 400px;
+        padding: 0;
+    }
+     .CentrePart p{
+        font-size: 5vw;
+        text-align: left;
+    }
+     .CentrePart h1{
+        font-size: 14vw;
+    }
+    .CentrePart h2{
+      font-size: 5vw;
+    }
+    .BigCircle{
+        width: 64vw;
+        height: 64vw;
+    }
 }
-.centre-part h2{
-    font-family:Poppins;
-    font-size:28px;
-    font-weight:lighter;
-}
-.centre-part p{
-    font-size: 20px;
-    font-family:'Roboto Slab';
-    
+@media (max-width:400px) {
+  .BigCircle{
+    width: 70vw;
+    height: 70vw;
+  }
 }

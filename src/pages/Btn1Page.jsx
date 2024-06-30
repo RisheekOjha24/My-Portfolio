@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 import styles from "../styles/Btn1Page.module.css";
-import solidCircle from "../assets/solidCircle.png"
-import arc from "../assets/arc.png"
-import bigCircle from "../assets/bigCircle.png";
-import myImage from "../assets/my-image-Photoroom.png";
+import myImage from "../assets/myImage.jpg";
 
 function Btn1Page() {
   return (
-    <div className={styles.Box}>
-      <div className={styles["left-part"]}>
-        <div className={styles["centre-part"]}><h1>Hello<span>,</span>
+    <div className={styles.Container}>
+      <div className={styles.LeftPart}>
+        <div className={styles.CentrePart}>
+          <h1>
+            Hello<span>,</span>
           </h1>
           <h2>I'm Risheek Ojha</h2>
           <br />
@@ -23,23 +22,13 @@ function Btn1Page() {
         </div>
       </div>
 
-      <div className={styles["right-part"]}>
-        <img
-          src={bigCircle}
-          alt="big circle"
-          className={styles["big-circle"]}
-        />
-        <img
-          src={solidCircle}
-          alt="image of circle"
-          className={styles["solid-circle"]}
-        />
-        <img src={myImage} alt="my image" className={styles["my-image"]} />
-        <img src={arc} alt="an arc" className={styles["arc"]} />
-        <img src={arc} alt="an arc" className={`${styles["arc"]} ${styles["arc2"]}`} />
+      <div className={styles.RightPart}>
+        <div alt="big circle" className={styles.BigCircle}>
+          <img src={myImage} alt="my image" className={styles.MyImage} />
+        </div>
       </div>
     </div>
   );
 }
 
-export default Btn1Page
+export default Btn1Page;
