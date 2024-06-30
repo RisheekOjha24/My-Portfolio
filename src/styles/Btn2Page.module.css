@@ -1,63 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.Box{
+.Box {
     display: flex;
-    height: 100%;
-    background-color: aquamarine;
+    /* height:100vh; */
 }
-.left-part{
+
+.left-part {
     flex: 1.2;
-    background-color: white;
-    display:flex;
-    justify-content:start;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
     align-items: center;
+    padding: 20px; 
 }
-.right-part{
-    flex:1;
+
+.right-part {
+    flex: 1;
     background-color: white;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    align-items: center; /* Center content vertically */
 }
-.centre-part{
+
+.centre-part {
     margin-left: 10px;
 }
-.centre-part h1{
-    font-size: 50px;
+
+.centre-part h1 {
+    font-size: 2.4rem; /* Adjusted font size */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 2rem;
 }
-.centre-part h2{
 
-    font-size: 20px;
-    font-family: Montserrat;
-    font-weight: bolder;
+.centre-part h2 {
+    font-size: 1.4rem; /* Adjusted font size */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
-.centre-part h2 span{
+
+.centre-part h2 span {
     margin-left: 1rem;
 }
-.centre-part p{
-    font-family:Cambria,'Times New Roman', Times, serif;
+
+.centre-part p {
+    font-family: Cambria, 'Times New Roman', Times, serif;
     padding-top: 2px;
-    font-size: 19px;
-}
-.education-content{
-    display: flex;
-    flex-direction: column;
-    display:flex;
-    gap: 10px
-}
-.boy-img{   
-    width: 22rem;
-    border-radius: 50% 50% 10% 10%;
-}
-.tilt{
-    position: fixed;
-    display:"inline-block";
-    top:4rem;
-    right: 14rem;
+    font-size: 1.2rem; /* Adjusted font size */
 }
 
-.trans-circle{
-    width:40rem;
-    position: fixed;
-    right:0;
-    transform: translateX(12rem) translateY(-5rem);
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boy-img {
+    width: 100%; 
+    max-width: 280px;
+    margin-bottom: 2rem;
+    border-radius: 50% 50% 10% 10%;
+}
+
+.tilt {
+    display: inline-block;
+    margin-top: 4rem; 
+    margin-right: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.trans-circle {
+    width: 100%;
+    max-width: 500px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(10rem) translateY(2.4rem);
+}
+
+@media (max-width: 768px) {
+    .Box {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .left-part {
+        display: flex;
+        align-items: flex-start;
+    }
+
+   .trans-circle{
+    display: none;
+   }
+    .centre-part h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+  .centre-part h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .centre-part p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }

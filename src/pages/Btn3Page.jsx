@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/Btn3Page.module.css";
-import elephant from "../assets/ele2.png";
+import elephant from "../assets/elephant.jpeg";
 import {NavLink} from "react-router-dom";
 
 function Btn3Page() {
@@ -29,7 +29,11 @@ function Btn3Page() {
               <div className={styles["link-style"]}>
                 <NavLink
                   to="/certificate"
-                  style={{ textDecoration: "none", color: "inherit" , padding: "8px"}}
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    padding: "8px",
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -51,7 +55,12 @@ function Btn3Page() {
       </div>
 
       <div className={styles["right-part"]}>
-      <img src={elephant} alt="elephant img" className={styles["ele-img"]} />
+        <img
+          src={elephant}
+          alt="elephant img"
+          className={styles["ele-img"]}
+          loading="lazy"
+        />
       </div>
     </div>
   );

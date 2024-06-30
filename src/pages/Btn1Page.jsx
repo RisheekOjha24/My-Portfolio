@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "../styles/Btn1Page.module.css";
-import solidCircle from "../assets/solidCircle.png";
-import arc from "../assets/arc.png";
-import bigCircle from "../assets/bigCircle.png";
-import myImage from "../assets/my-image-Photoroom.png";
+import myImage from "../assets/myImage.jpg";
 
 function Btn1Page() {
   return (
@@ -26,19 +23,9 @@ function Btn1Page() {
       </div>
 
       <div className={styles.RightPart}>
-        <img src={bigCircle} alt="big circle" className={styles.BigCircle} />
-        <img
-          src={solidCircle}
-          alt="image of circle"
-          className={styles.SolidCircle}
-        />
-        <img src={myImage} alt="my image" className={styles.MyImage} />
-        <img src={arc} alt="an arc" className={styles.Arc} />
-        <img
-          src={arc}
-          alt="an arc"
-          className={`${styles.Arc} ${styles.Arc2}`}
-        />
+        <div alt="big circle" className={styles.BigCircle}>
+          <img src={myImage} alt="my image" className={styles.MyImage} />
+        </div>
       </div>
     </div>
   );
