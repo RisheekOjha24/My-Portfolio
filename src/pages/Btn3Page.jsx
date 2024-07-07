@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../styles/Btn3Page.module.css";
 import elephant from "../assets/elephant.jpeg";
 import {NavLink} from "react-router-dom";
+import certificate from "../assets/certificate.pdf"
 
 function Btn3Page() {
   return (
@@ -27,8 +28,8 @@ function Btn3Page() {
                 </li>
               </ul>
               <div className={styles["link-style"]}>
-                <NavLink
-                  to="/certificate"
+                <a
+                  href={certificate}
                   style={{
                     textDecoration: "none",
                     color: "inherit",
@@ -38,7 +39,7 @@ function Btn3Page() {
                   rel="noopener noreferrer"
                 >
                   View Certificate
-                </NavLink>
+                </a>
               </div>
             </div>
 

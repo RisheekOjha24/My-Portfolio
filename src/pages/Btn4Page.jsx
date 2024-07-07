@@ -29,7 +29,7 @@ function Btn4Page() {
         <div className={styles["right-side"]}>
           <img src={resultImg} alt="result" className={styles["result-img"]} />
           <div
-            style={{ display: "flex", alignItems: "center",justifyContent:"flex-end", marginTop: "1rem" }}
+            className={styles["hcjs-img-box"]}
           >
             <h2 style={{ margin: "4px" }}>Technology Used</h2>
             <img src={hcjs} alt="image" className={styles["hcjs-img"]} />
