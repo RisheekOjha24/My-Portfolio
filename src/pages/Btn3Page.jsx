@@ -44,11 +44,16 @@ function Btn3Page() {
             </div>
 
             <div>
-              <h2>Experience with MERN Stack</h2>
+              <h2>
+                Amazon ML Summer School <br />
+                July 6, 2024 – July 28, 2024
+              </h2>
               <p>
-                During my journey in web development, I have immersed myself in
-                the world of modern technologies, particularly focusing on the
-                MERN stack, through various projects and hands-on experiences.
+                During my training with Amazon Data Scientists, I learned the
+                fundamentals of machine learning and how to apply them to
+                practical techniques like supervised learning, deep neural
+                networks, probabilistic graphical models, dimensionality
+                reduction, unsupervised learning, and sequential models
               </p>
             </div>
           </div>

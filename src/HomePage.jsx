@@ -55,7 +55,10 @@ const HomePage = () => {
           />
         </div>
 
-        <div className="btnContent">{displaybtnData(btnVal)}</div>
+        <div className="btnContent">
+        {displaybtnData(btnVal)}
+   
+        </div>
       </div>
     </>
   );
