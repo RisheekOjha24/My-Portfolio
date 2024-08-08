@@ -70,14 +70,7 @@
     margin-bottom: 2rem;
 }
 
-.trans-circle {
-    width: 100%;
-    max-width: 500px; 
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(10rem) translateY(2.4rem);
-}
+
 
 @media (max-width: 768px) {
     .Box {

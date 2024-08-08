@@ -7,6 +7,7 @@ import certificate from "../assets/certificate.pdf"
 function Btn3Page() {
   return (
     <div className={styles.Box}>
+      <div class="left-placeholder2"></div>
       <div className={styles["left-part"]}>
         <div className={styles["centre-part"]}>
           <h1>Experience</h1>

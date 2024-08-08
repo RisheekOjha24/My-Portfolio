@@ -7,6 +7,7 @@ import boyStudy from "../assets/studyBoy.png";
 function Btn2Page() {
 
    return (
+    
     <div className={styles.Box}>
       <div className={styles["left-part"]}>
         <div className={styles["centre-part"]}>
@@ -44,11 +45,6 @@ function Btn2Page() {
       </div>
 
       <div className={styles["right-part"]}>
-        <img
-          src={transCircle}
-          alt="transparent cicrle"
-          className={styles["trans-circle"]}
-        />
         <Tilt
           className={styles["tilt"]}
           perspective={500}
