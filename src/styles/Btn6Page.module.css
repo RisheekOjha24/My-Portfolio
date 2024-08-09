@@ -9,22 +9,27 @@
 }
 
 .right-side h2 {
-  font-family: "Zen Dots";
+ font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .left-side h1 {
   font-family: Montserrat;
   margin: 1rem;
   font-size: 40px;
+  text-align: center;
 }
 
 .left-side h2 {
   text-align: left;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+
+  font-size: 2rem;
   word-spacing: 4px;
   margin-left: 1rem;
+  margin-bottom: 1rem;
   text-align: right;
   font-family: "Bebas Neue";
+  text-align: center;
 }
 
 .left-side {
@@ -50,8 +55,8 @@
 }
 
 .mern-img {
-  margin: 1rem;
-  width: 9rem;
+ width: 12rem;
+margin-left: 2px;
 }
 
 .mern-img:hover {
@@ -66,7 +71,7 @@
 .btn {
   display: inline-block;
   border: 2px solid rgb(199, 159, 106);
-  padding: 10px;
+  padding: 6px 1rem;
   margin: 1rem;
   box-shadow: 2px 1px rgb(121, 123, 121);
   font-size: 14px;

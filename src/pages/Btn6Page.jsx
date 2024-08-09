@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Btn6Page.module.css";
 import movieFront from "../assets/movieFront.png";
 import movieList from "../assets/movieList.png";
-import hcjs from "../assets/MERN.jpg";
+import hcjs from "../assets/mernImg.jpg";
 
 function Btn6Page() {
   return (

@@ -34,7 +34,7 @@ main {
 }
 
 .right-side h2 {
-  font-family: 'Zen Dots', sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem; /* Adjusted font size */
   margin-top: 0; /* Removed margin */
 }

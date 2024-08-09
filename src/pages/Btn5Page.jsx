@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Btn5Page.module.css";
 import chatImage from "../assets/chat.png";
 import avatarImg from "../assets/avatar.png";
-import hcjs from "../assets/MERN.jpg";
+import hcjs from "../assets/mernImg.jpg";
 
 function Btn5Page() {
   return (

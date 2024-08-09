@@ -1,7 +1,6 @@
 import React from 'react'; 
 import styles from "../styles/Btn2Page.module.css";
 import Tilt from "react-parallax-tilt";
-import transCircle from "../assets/transCircle.png";
 import boyStudy from "../assets/studyBoy.png";
 
 function Btn2Page() {

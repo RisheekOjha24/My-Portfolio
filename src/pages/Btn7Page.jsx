@@ -1,8 +1,7 @@
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai"; // Import LinkedIn icon from react-icons
 import { MdEmail } from "react-icons/md";
-import profileImage from "../assets/thanku.jpeg"; // Replace with your actual image file path
-
+import profileImage from "../assets/babyPanda.jpeg"; 
 function Btn7Page() {
   const handleEmailClick = () => {
     window.location.href = "mailto:risheekojha@gmail.com";
