@@ -10,7 +10,7 @@ function Displaybtn({ btn }) {
           to={ele}
           smooth={true}
           duration={500}
-          offset={-50} // Adjust as needed
+          offset={20} // Adjust as needed
           spy={true} // Enable active class based on viewport
           activeClass="active" // Class to apply when the section is in view
         >
