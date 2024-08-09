@@ -13,7 +13,7 @@ function Btn5Page() {
           <h2>Real Time Chat Application</h2>
           <img src={chatImage} alt="ok" className={styles["chat-img"]} />
           <div className={styles["btn-div"]}>
-            <a href="https://real-time-chat-red-phi.vercel.app" target="_blank">
+            <a href="https://live-line.vercel.app" target="_blank">
               <p className={styles["btn"]}>Visit Website</p>
             </a>
             <a
@@ -26,9 +26,7 @@ function Btn5Page() {
         </div>
         <div className={styles["right-side"]}>
           <img src={avatarImg} alt="result" className={styles["avatar-img"]} />
-          <div
-            className={styles["mern-box"]}
-          >
+          <div className={styles["mern-box"]}>
             <h2>Technology Used</h2>
             <img src={hcjs} alt="image" className={styles["mern-img"]} />
           </div>

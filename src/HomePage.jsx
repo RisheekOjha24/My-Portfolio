@@ -23,6 +23,7 @@ const HomePage = () => {
       <div className="btnNav">
         <Displaybtn btn={btn} stateChangeBtn={stateChangeBtn} btnVal={btnVal} />
       </div>
+      <div className="left-placeholder"></div>
       <div className="btnContent">
         <Element name="btn1" className="element">
           <Btn1Page />
