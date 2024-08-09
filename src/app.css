@@ -3,30 +3,43 @@
     padding:0;
 }
 body{
-overflow: hidden;
+
 width:100%;
 height:100%;
 }
-.active{
-    background-color: #fd6220;
-    color:white;
-     padding: 10px;
-    min-width: 45px;
-    font-size: 20px;
-    border-radius: 50%;
-     text-align: center;
-     font-family:Montserrat;
+.btnContainer {
+  display: flex;
+  flex-direction: column;
 }
-.btn{
-    border: 2px solid #fd6220;
-    padding: 5px;
-    min-width: 40px;
-    font-size: 20px;
-    text-align: center;
-     border-radius: 50%;
-    font-family: Montserrat;
-   
+
+.btn {
+  border: 2px solid #fd6220;
+  padding: 5px;
+  min-width: 40px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: Montserrat;
+  cursor: pointer;
 }
+
+.active {
+  border: 2px solid #fd6220;
+
+  min-width: 40px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-family: Montserrat;
+  cursor: pointer;
+
+}
+
+.element {
+  min-height: 100vh; /* Ensure sections are tall enough */
+  padding: 20px; /* Add padding if needed */
+}
+
 .btn:hover{
     cursor: pointer;
 }
@@ -38,6 +51,8 @@ height:100%;
 .btnNav{
     display:flex;
     align-items:center;
+    position: fixed;
+    top:5rem;
 }
 .btnContent{
     flex:8;
@@ -53,6 +68,15 @@ height:100%;
     padding: 2rem;
     box-sizing: border-box;
   
+}
+.left-placeholder{
+    height: 100vh;
+    width: 80px;
+    min-width: 50px;
+}
+.left-placeholder2{
+    height: 100vh;
+    width: 20px;
 }
 @media (max-width:600px) {
     body{

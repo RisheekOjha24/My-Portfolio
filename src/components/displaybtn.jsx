@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-scroll";
 
-function Displaybtn(obj) {
-
-const {btn,stateChangeBtn,btnVal}=obj;
-
+function Displaybtn({ btn }) {
   return (
     <div className="btnContainer">
-      {btn.map((ele, index) => {
-        return (
-          <div
-            className={btnVal === ele ? "active" : "btn"}
-            key={index}
-            id={ele}
-            onClick={() => stateChangeBtn(ele)}
-          >
-         
+      {btn.map((ele, index) => (
+        <Link
+          key={index}
+          to={ele}
+          smooth={true}
+          duration={500}
+          offset={20} // Adjust as needed
+          spy={true} // Enable active class based on viewport
+          activeClass="active" // Class to apply when the section is in view
+        >
+          <div className="btn">
             {index + 1}
           </div>
-        );
-      })}
+        </Link>
+      ))}
     </div>
   );
 }
 
-export default Displaybtn
+export default Displaybtn;
